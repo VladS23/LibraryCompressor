@@ -12,7 +12,7 @@ for files in filelist:
         newfiledir = newfiledir[:-1]
     newfiledir = newfiledir[:-1]
     os.makedirs(newfiledir,exist_ok=True)
-    archive = zipfile.ZipFile(files.replace(path, path + "zipped"), mode='w')
+    archive = zipfile.ZipFile(files.replace(path, path + " Zipped"), mode='w')
     print(files)
     archmame=files.replace(path, "")
     while "\\" in archmame:
