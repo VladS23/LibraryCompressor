@@ -7,7 +7,7 @@ for root, dirs, files in os.walk(path):
     for file in files:
         filelist.append(os.path.join(root,file))
 for files in filelist:
-    newfiledir=files.replace(path, path + "zipped")
+    newfiledir=files.replace(path, path + " Zipped")
     while newfiledir[len(newfiledir) - 1] != "\\":
         newfiledir = newfiledir[:-1]
     newfiledir = newfiledir[:-1]
